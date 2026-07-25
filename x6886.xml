@@ -6,7 +6,7 @@
   <project name="Il103/kernel_infinix_x6886" path="kernel/infinix/x6886" remote="x6886" revision="Kernel.Lineage.23.2" />
   <project name="LineageOS/android_hardware_mediatek" path="hardware/mediatek" remote="x6886" revision="lineage-23.2" />
   <project name="LineageOS/android_device_mediatek_sepolicy_vndr" path="device/mediatek/sepolicy_vndr" remote="x6886" revision="lineage-23.2" />
-  <project name="mt6789-transsion/hardware_transsion" path="hardware/transsion" remote="x6886" revision="lineage-23.2" />
-  <project name="xiaomi-mediatek-devs/android_vendor_mediatek_ims" path="vendor/mediatek/ims" remote="x6886" revision="lineage-23.2" />
+  <project name="mt6789-transsion/hardware_transsion" path="hardware/transsion" remote="x6886" revision="lineage-23.0" />
+  <project name="xiaomi-mediatek-devs/android_vendor_mediatek_ims" path="vendor/mediatek/ims" remote="x6886" revision="android-16" />
   <project name="CandyTrees/packages_apps_ViPER4AndroidFX" path="packages/apps/ViPER4AndroidFX" remote="x6886" revision="lineage-23.2" />
 </manifest>
