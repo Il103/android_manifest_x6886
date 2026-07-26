@@ -42,7 +42,7 @@ mka bacon -j24
 | # | Repo | Path | Description |
 |---|------|------|-------------|
 | 1 | Il103/android_device_infinix_x6886 | device/infinix/x6886 | Device tree (BoardConfig, init, configs, overlays, sepolicy) |
-| 2 | Il103/vendor_infinix_x6886 | vendor/infinix/x6886 | 5010 proprietary blobs from stock (LFS) |
+| 2 | Il103/vendor_infinix_x6886 | vendor/infinix/x6886 | 6,405 proprietary blobs from stock (LFS) |
 | 3 | Il103/kernel_infinix_x6886 | kernel/infinix/x6886 | Kernel source 5.10.198 (MT6789) |
 | 4 | LineageOS/android_hardware_mediatek | hardware/mediatek | MTK hardware HALs and libraries |
 | 5 | LineageOS/android_device_mediatek_sepolicy_vndr | device/mediatek/sepolicy_vndr | MTK vendor SELinux policies |
@@ -57,12 +57,23 @@ mka bacon -j24
 - **Platform:** MT6789 (Helio G200)
 - **Security patch:** February 2026
 
+## Blob coverage
+
+| Category | Count | Stock match |
+|----------|-------|-------------|
+| proprietary-files.txt | 6,405 entries | 99.96% |
+| vendor/ in tree | 5,275 files | 100% |
+| system_ext/ in tree | 1,234 files | 100% |
+| Kernel modules | 208 + 189 | 100% identical |
+| Total vendor tree | 6,439 files (3.0 GB) | — |
+
 ## Notes
 
 - Only `vendor/infinix/x6886` uses Git LFS. Run `git lfs pull` there before building.
 - The kernel tree contains the full kernel source (not prebuilt).
 - VNDK compatibility shims (v31-v34) are included in the device tree.
 - Blobs extracted from full firmware dump (system, vendor, product, system_ext, vendor_boot, vendor_dlkm).
+- All 51 vendor init .rc scripts and 1,162 system_ext files are included.
 
 ## Credits
 
